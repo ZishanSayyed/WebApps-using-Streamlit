@@ -46,7 +46,7 @@ trackerdata=yf.Ticker(trackerSymbol)
 # In[10]:
 
 
-trackerDf=trackerdata.history(period="Id",start='2022-01-11',end='2022-01-11')
+trackerDf=trackerdata.history(period="1d",start='2022-01-11',end='2022-01-11')
 
 
 # In[11]:
