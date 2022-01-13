@@ -11,18 +11,18 @@ import yfinance as yf
 
 
 
-trackerSymbol="GOOGL"
+tickerSymbol="GOOGL"
 
-trackerdata=yf.Ticker(trackerSymbol)
-
-
-trackerDf=trackerdata.history(period="1d",start='2020-01-11',end='2022-01-11')
+tickerData=yf.Ticker(tickerSymbol)
 
 
-
-
-st.line_chart(trackerDf.Close)
+tickerDf=tickerData.history(period="1d",start='2020-01-11',end='2022-01-11')
 
 
 
-st.line_chart(trackerDf.Volume)
+
+st.line_chart(tickerDf.Close)
+
+
+
+st.line_chart(tickerDf.Volume)
